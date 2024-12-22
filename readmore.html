@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Carter Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #000;
+      line-height: 1.6;
+    }
+
+    /* Navigation */
+    header {
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid #eaeaea;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      max-width: 1200px;
+      padding: 1rem 0;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 1rem;
+    }
+
+    .contact a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .hero-content {
+      max-width: 50%;
+    }
+
+    h2 {
+      color: #6b6b6b;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      line-height: 1.2;
+      margin-bottom: 2rem;
+    }
+
+    .highlight {
+      color: #000;
+      font-weight: bold;
+    }
+
+    .cta-button {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .hero-image {
+      position: relative;
+      max-width: 50%;
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 50%;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .circular-bg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 450px;
+      height: 450px;
+      background-color: #f8f9ff;
+      border-radius: 50%;
+      z-index: -1;
+    }
+
+    /* Footer */
+    .footer-note {
+      text-align: right;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .footer-note a {
+      color: #6b6bff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo">You X</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Pages</a></li>
+          <li><a href="#">Cart (0)</a></li>
+        </ul>
+      </nav>
+      <div class="contact">
+        <a href="mailto:john@you.com">john@you.com</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Hey, I’m John Carter</h2>
+        <h1>I enjoy designing <br> <span class="highlight">tech websites</span> and <br> <span class="highlight">digital products</span></h1>
+        <button class="cta-button">Get in touch</button>
+      </div>
+      <div class="hero-image">
+        <div class="circular-bg"></div>
+        <img src="assets/img/avatar1.png" alt="John Carter on phone">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-note">
+      <p>Explore our collection of 200+ <a href="#">Premium Webflow Templates</a></p>
+    </div>
+  </footer>
+</body>
+</html>
